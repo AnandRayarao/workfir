@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-male',
@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class MaleComponent implements OnInit {
 
   constructor() { }
+ 
+ 
 
   ngOnInit(): void {
+
   }
 
 }

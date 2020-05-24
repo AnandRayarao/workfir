@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef, NgZone } from '@angular/core';
 import { MapsAPILoader, MouseEvent } from '@agm/core';
-
+import { WeatherService } from '../services/weather.service';
 
 @Component({
   selector: 'app-home',
@@ -10,21 +10,24 @@ import { MapsAPILoader, MouseEvent } from '@agm/core';
   
 export class HomeComponent implements OnInit {
   title: string = 'AGM project';
+  weather : any
+  location = "sydney"
+
  
  
- 
- 
- 
-  constructor(
+
+  constructor(private weatherservice : WeatherService
    
   ) { }
  
  
   ngOnInit() {
+      debugger
+      this.weather= this.weatherservice.get_weather(this.location)
+   }
   
   }
  
  
  
  
-}
