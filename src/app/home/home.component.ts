@@ -11,7 +11,7 @@ import { WeatherService } from '../services/weather.service';
 export class HomeComponent implements OnInit {
   title: string = 'AGM project';
   weather : any
-  location = "sydney"
+  location = "Melbourne"
 
  
  
