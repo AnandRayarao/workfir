@@ -12,6 +12,9 @@ import { MaleComponent } from './male/male.component';
 import { FemaleComponent } from './female/female.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { WeatherService } from './services/weather.service';
+import { ContactComponent } from './contact/contact.component';
+import { LgaComponent } from './lga/lga.component';
+import { CrashtypeComponent } from './crashtype/crashtype.component';
 
 
 
@@ -24,6 +27,9 @@ import { WeatherService } from './services/weather.service';
     ResponseTimeComponent,
     MaleComponent,
     FemaleComponent,
+    ContactComponent,
+    LgaComponent,
+    CrashtypeComponent,
     
   ],
   imports: [
